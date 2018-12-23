@@ -1,0 +1,84 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx688d2296e069717a",
+	"projectname": "%E5%87%83%E5%B0%8F%E5%9B%BE%E7%9A%84%E5%8D%9A%E5%AE%A2",
+	"libVersion": "2.2.5",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "category",
+					"pathName": "pages/category/category",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "blogDetail",
+					"pathName": "pages/blogDetail/blogDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "blog_exm",
+					"pathName": "pages/blogDetail/blogDetail",
+					"query": "blogId=W_ZyLkXacNtiP6pH"
+				},
+				{
+					"id": -1,
+					"name": "addBlog",
+					"pathName": "pages/addBlog/addBlog",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "cube",
+					"pathName": "pages/cube/cube",
+					"query": ""
+				}
+			]
+		}
+	}
+}

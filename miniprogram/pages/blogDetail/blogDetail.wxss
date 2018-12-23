@@ -1,0 +1,298 @@
+/* pages/blogDetail/blogDetail.wxss */
+@import "../../wxParse/wxParse.wxss";
+page{
+  position: relative;
+  background-color: #fff;
+  padding-bottom: 100rpx;
+}
+.page{
+  background-color: #fff;
+}
+.topic{
+  background-color: #fff;
+  padding: 20rpx;
+}
+.topic_title{
+  color: #000;
+  font-weight: bold;
+  font-size: 36rpx;
+  line-height: 50rpx;
+}
+.topic_content{
+  margin-top: 10rpx;
+  color: #383845;
+  font-size: 30rpx;
+  line-height: 44rpx;
+}
+.topic_meta{
+  padding: 15rpx 0 0; 
+  display: flex;
+}
+.meta_item{
+  display: flex;
+  line-height: 30rpx;
+  height: 30rpx;
+  margin-right: 15rpx;
+}
+.meta_icon{
+  overflow: hidden;
+  margin-right: 5rpx;
+}
+.meta_icon image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.meta_text{
+  font-size: 24rpx;
+  line-height: 30rpx;
+  color: #999;
+}
+.meta_item_view{
+  width: 88rpx;
+}
+.meta_item_comment{
+  width: 88rpx;
+}
+.meta_item_like{
+  width: 88rpx;
+}
+.meta_more{
+  margin-left: auto;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  color: #7a81b1;
+}
+.topic_tags{
+  display: flex;
+  margin: 15rpx 0 5rpx;
+}
+.tag_item{
+  font-size: 26rpx;
+  margin-right: 25rpx;
+  padding: 0 10rpx;
+  color: #fff;
+  border-radius: 5rpx;
+  background-color: #b4b8d3d3;
+}
+.content{
+  padding: 20rpx;
+}
+
+/* comment start */
+.comment{
+  background-color: #fff;
+  width: 750rpx;
+  box-shadow: 0 0 20rpx #f0f0f0;
+  position: fixed;
+  padding:  15rpx 20rpx 0;
+  bottom: 0;
+  display: flex;
+}
+.backHomePage{
+  margin-right: 20rpx;
+}
+.backHomePage image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.comment-input{
+  height: 60rpx;
+  width: 500rpx;
+  line-height: 60rpx;
+  background-color: #f5f5f5;
+  padding: 0 5rpx;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+  font-size: 32rpx;
+  color: #666;
+}
+.placeholder_style{
+  color: #ccc;
+}
+.comment_btn{
+  margin-left: 10rpx;
+  width: 120rpx;
+  height: 60rpx;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+.comment_btn image{
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+}
+/* comment end */
+
+/* commentList start */
+.commentList{
+  padding: 20rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+}
+.commentList_line{
+  width: 100%;
+  height: 15rpx;
+  background-color: #f0f0f0;
+}
+.commentList_header{
+  padding: 0 20rpx;
+  font-size: 34rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+}
+.commentList_content{
+  display: flex;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.commentList_content image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.commentList_content_name{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #999;
+}
+.commentList_content_date{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color: #999;
+  margin-left: auto;
+  padding-right: 10rpx;
+}
+.commentList_detail{
+  margin-top: 5rpx;
+  padding-left: 70rpx;
+  font-size: 32rpx;
+  color: #666;
+  line-height: 50rpx;
+}
+.childComment{
+  
+}
+.childComment_content{
+  margin-top: 15rpx;
+  padding: 0 70rpx;
+  display: flex;
+}
+.childComment_content image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.childComment_content_name{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #999;
+}
+.childComment_detail{
+  margin-top: 5rpx;
+  padding-left: 140rpx;
+  font-size: 32rpx;
+  color: #666;
+  line-height: 50rpx;
+}
+.commentList_bottom{
+  text-align: center;
+  color: #ccc;
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+/* commentList end */
+/* getuserInfoPopup start */
+@keyframes fadeIn {    
+    0% {opacity: 0;} 
+    40% {opacity: 0;}    
+    100% {opacity: 1;}   
+}
+@keyframes fadeInMask {    
+    0% {opacity: 0;} 
+    40% {opacity: 0;}    
+    100% {opacity: 0.6;}   
+} 
+.overlay{
+  z-index: 22;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  animation: fadeInMask 0.5s ease-in;
+}
+.popup_container{
+  padding: 20rpx 10rpx;
+  z-index: 30;
+  position: fixed;
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 10rpx;
+  left: 50%;
+  top:45%;
+  margin-left: -250rpx;
+  margin-top: -250rpx;
+  background-color: #fff;
+  animation: fadeIn 0.5s ease-in; 
+}
+.popup_container .title{
+  text-align: center;
+}
+.popup_container .main_title{
+  margin: 0 auto;
+  width: 200rpx;
+  border-bottom: 2rpx solid #ccc;
+  color: #666;
+  font-size: 42rpx;
+}
+.popup_container .sub_title{
+  margin-top: 20rpx;
+  color: #999;
+  font-size: 32rpx;
+}
+.popup_container .img{
+  margin-top: 20rpx;
+  font-size: 0;
+  text-align: center;
+}
+.popup_container .img image{
+  display: inline-block;
+  width: 180rpx;
+  height: 180rpx;
+}
+.popup_container button{
+  margin-top: 30rpx;
+  font-size: 40rpx;
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 50rpx;
+  background-color: #7a81b1;
+  color:#fff;
+}
+.popup_container button::after{
+  border: none;
+}
+.close{
+  z-index: 31;
+  position: fixed;
+  left: 50%;
+  margin-left: -25rpx;
+  bottom:275rpx;
+  right:0rpx;
+  animation: fadeIn 0.5s ease-in;
+}
+.close image{
+  width: 50rpx;
+  height: 50rpx;
+}
+/* getuserInfoPopup end */

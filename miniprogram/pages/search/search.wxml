@@ -1,0 +1,45 @@
+<!--pages/search/search.wxml-->
+<view class='page'>
+  <view class='header'>
+    <view class='header_text'>当前标签：</view>
+    <view class='header_title'>{{tagId}}</view>
+    <view class='header_text'>共{{count}}篇文章</view>
+  </view>
+  <view class='topic' wx:for='{{tagSearch}}' wx:key=''>
+    <view class='topic_title'>{{item.title}}</view>
+    <view class='topic_content'>{{item.intro}}</view>
+    <view class='topic_meta'>
+      <view class='meta_item meta_item_author'>
+        <view class='meta_icon'>
+          <image src='../../images/user.png'></image>
+        </view>
+        <view class='meta_text'>{{item.author}}</view>
+      </view>
+      <view class='meta_item meta_item_date'>
+        <view class='meta_icon meta_icon_author'>
+          <image src='../../images/time_circle.png'></image>
+        </view>
+        <view class='meta_text'>{{item.date}}</view>
+      </view>
+      <view class='meta_item meta_item_view'>
+        <view class='meta_icon'>
+          <image src='../../images/view.png'></image>
+        </view>
+        <view class='meta_text'>{{item.view}}</view>
+      </view>
+      <view class='meta_item meta_item_comment'>
+        <view class='meta_icon'>
+          <image src='../../images/comment.png'></image>
+        </view>
+        <view class='meta_text'>{{item.comment}}</view>
+      </view>
+      <view class='meta_item meta_item_like' bindtap='vote'>
+        <view class='meta_icon'>
+          <image src='../../images/heart.png'></image>
+        </view>
+        <view class='meta_text'>{{item.like}}</view>
+      </view>
+      <view class='meta_more' data-id='{{item.blogId}}' bindtap='navToDetail'>更多>></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+/* pages/test/test.wxss */
+page{
+  background-color: #000;
+}
+.page{
+  background-color: #000;
+}
+#box{
+		width: 400rpx;
+		height: 400rpx;
+		margin:300rpx auto;
+		background: transparent;
+		position: relative;
+		transform:perspective(1600rpx) rotateY(-60deg) rotateX(45deg);
+		transform-style:preserve-3d;
+	}
+	#box view{
+		width:100%;
+		height:100%;
+		position: absolute;
+		top:0;
+		left: 0;
+		background-size:cover; 
+		box-shadow:0 0 200rpx #5fbcff;
+		opacity: .8;
+	}
+	#box view image{
+		width: 400rpx;
+		height: 400rpx;
+	}
+	.front{
+		transform:translateZ(200rpx);
+	}
+	.back{
+		transform:translateZ(-200rpx);
+	}
+	.left{
+		transform:translateX(-200rpx) rotateY(90deg);
+	}
+	.right{
+		transform:translateX(200rpx) rotateY(90deg);
+	}
+	.top{
+		transform:translateY(-200rpx) rotateX(90deg);
+	}
+	.bottom{
+		transform:translateY(200rpx) rotateX(90deg);
+	}
+  .backToMine{
+    font-size: 30rpx;
+    text-align: center;
+    bottom: 100rpx;
+    left: 50%;
+    margin-left: -75rpx;
+    width: 150rpx;
+    height:150rpx;
+    line-height: 150rpx;
+    border-radius: 50%;
+    background-color: #5fbcff66;
+    position: fixed;
+    z-index: 200;
+    color: #ffffff66;
+    box-shadow:0 0 160rpx #5fbcff;
+  }

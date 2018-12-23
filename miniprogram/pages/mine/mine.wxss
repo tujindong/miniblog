@@ -1,0 +1,304 @@
+page{
+  background-color: #e8e8f0;
+}
+.bg{
+ 
+}
+.bg image{
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+}
+.page{
+  background-color: #e8e8f0;
+}
+.title{
+  position: relative;
+  z-index: 22;
+  margin-top: 100rpx;
+  text-align: center;
+}
+.title .img_wrapper{
+  width: 200rpx;
+  margin: 0 auto;
+  
+}
+.title .img_wrapper image{
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
+}
+.title .desc{
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.content{
+  margin: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+.content .item{
+  font-size: 28rpx;
+  text-align: center;
+  color: #fff;
+  text-decoration: underline;
+}
+.adv{
+  margin-right: 40rpx;
+}
+/**雪花飘落 start**/
+.snow{
+	width: 10rpx;
+	height: 10rpx;
+	border-radius: 50%;
+	background-color: #fefefe;
+	        animation-name: snow;
+	        animation-duration: 8000ms;
+	        animation-iteration-count: infinite;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+  z-index: 21;
+	transform: translateZ(0) translate(0, 0) scale(.2);
+}
+
+.snow1{
+	left: 10%;
+	transform: translate(1vh);
+}
+
+.snow2{
+	left: 20%;
+  transform: translate(1.5vh);
+  animation-delay: 200ms;
+}
+
+.snow3{
+	left: 30%;
+  transform: translate(2vh);
+  animation-delay: 520ms;
+}
+
+.snow4{
+	left: 40%;
+  transform: translate(2.5vh);
+  animation-delay: 999ms;
+}
+
+.snow5{
+	left: 50%;
+  transform: translate(3vh);
+  animation-delay: 150ms;
+}
+
+.snow6{
+	left: 60%;
+  transform: translate(3.5vh);
+  animation-delay: 400ms;
+}
+
+.snow7{
+	left: 70%;
+  transform: translate(4vh);
+  animation-delay: 1550ms;
+}
+
+.snow8{
+	left: 80%;
+  transform: translate(4.5vh);
+  animation-delay: 655ms;
+}
+
+.snow9{
+	left: 86%;
+  transform: translate(5vh);
+  animation-delay: 250ms;
+}
+
+.snow10{
+	left: 55%;
+  transform: translate(5.5vh);
+  animation-delay: 600ms;
+}
+
+.snow11{
+	left: 15%;
+  transform: translate(6vh);
+  animation-delay: 2000ms;
+}
+
+.snow12{
+	left: 25%;
+  transform: translate(6.5vh);
+  animation-delay: 2400ms;
+}
+
+.snow13{
+	left: 35%;
+  transform: translate(7vh);
+  animation-delay: 2999ms;
+}
+
+.snow14{
+	left: 45%;
+  transform: translate(7.5vh);
+  animation-delay: 1300ms;
+}
+
+.snow15{
+	left: 55%;
+  transform: translate(8vh);
+  animation-delay: 2150ms;
+}
+
+.snow16{
+	left: 65%;
+  transform: translate(8.5vh);
+  animation-delay: 2140ms;
+}
+
+.snow17{
+	left: 75%;
+  transform: translate(5.5vh);
+  animation-delay: 2600ms;
+}
+
+.snow18{
+	left: 84%;
+  transform: translate(5.5vh);
+  animation-delay: 2666ms;
+}
+
+.snow19{
+	left: 89%;
+  transform: translate(5.5vh);
+  animation-delay: 2200ms;
+}
+
+.snow20{
+	left: 10%;
+  transform: translate(5.5vh);
+  animation-delay: 2400ms;
+}
+
+.snow21{
+	left: 20%;
+  transform: translate(5.5vh);
+  animation-delay: 3200ms;
+}
+
+.snow22{
+	left: 30%;
+  transform: translate(5.5vh);
+  animation-delay: 3500ms;
+}
+
+.snow24{
+	left: 40%;
+  transform: translate(2.5vh);
+  animation-delay: 3999ms;
+}
+
+.snow25{
+	left: 50%;
+  transform: translate(3vh);
+  animation-delay: 3150ms;
+}
+
+.snow26{
+	left: 60%;
+  transform: translate(3.5vh);
+  animation-delay: 3400ms;
+}
+
+.snow27{
+	left: 70%;
+  transform: translate(4vh);
+  animation-delay: 4550ms;
+}
+
+.snow28{
+	left: 79%;
+  transform: translate(4.5vh);
+  animation-delay: 3655ms;
+}
+
+.snow29{
+	left: 86%;
+  transform: translate(5vh);
+  animation-delay: 3250ms;
+}
+
+.snow30{
+	left: 55%;
+  transform: translate(5.5vh);
+  animation-delay: 4600ms;
+}
+
+.snow31{
+	left: 15%;
+  transform: translate(6vh);
+  animation-delay: 6000ms;
+}
+
+.snow32{
+	left: 25%;
+  transform: translate(6.5vh);
+  animation-delay: 6400ms;
+}
+
+.snow33{
+	left: 35%;
+  transform: translate(7vh);
+  animation-delay: 6999ms;
+}
+
+.snow34{
+	left: 45%;
+  transform: translate(7.5vh);
+  animation-delay: 5300ms;
+}
+
+.snow35{
+	left: 55%;
+  transform: translate(8vh);
+  animation-delay: 6150ms;
+}
+
+.snow36{
+	left: 65%;
+  transform: translate(8.5vh);
+  animation-delay: 6140ms;
+}
+
+.snow37{
+	left: 75%;
+  transform: translate(5.5vh);
+  animation-delay: 6600ms;
+}
+
+.snow38{
+	left: 83%;
+  transform: translate(5.5vh);
+  animation-delay: 6666ms;
+}
+
+.snow39{
+	left: 89%;
+  transform: translate(5.5vh);
+  animation-delay: 6200ms;
+}
+
+@keyframes snow{
+
+	10%{
+		opacity: 1
+	}
+
+	80%{
+		transform: translate3d(0, 85vh, 0) scale(1.2);
+	}
+}
+/**雪花飘落 end**/

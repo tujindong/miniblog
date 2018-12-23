@@ -1,0 +1,42 @@
+<!--pages/addBlog/addBlog.wxml-->
+<view class='page'>
+  <view class='backToMine' bindtap='backToMine'>返回凃小图</view>
+  <van-tabs active="0">
+    <van-tab title="文章编辑">
+      <view class='blog_content'>
+         <view class='item' wx:for='{{blogList}}' wx:key=''>
+           <view class='item_title' data-id='{{item._id}}' bindtap='navToDetail'>{{item.title}}</view>
+           <view class='item_del' data-id='{{item._id}}' bindtap='delBlog'>删除</view>
+         </view>
+      </view>
+      <view class='loading_box' wx:if='{{loadingStatus}}'>
+        <view class="loading_fade_circle"></view>
+      </view>
+    </van-tab>
+    <van-tab title="新增博客">
+      <view class='content'>
+        <view class="section">
+          <input bindinput='inputTitle' adjust-position='true' placeholder="文章标题：" auto-focus />
+          <input bindinput='inputId' adjust-position='true' placeholder="文章ID：" auto-focus />
+          <input bindinput='inputAuthor' adjust-position='true' placeholder='作者：'></input>
+          <view class='inputImg'>
+            <input bindinput='inputImgName' value='{{value}}' adjust-position='true' placeholder='图片名：'></input>
+            <view class='uploadImg' bindtap='uploadImg'>图片上传</view>
+          </view>
+          <!-- <picker
+            mode="date"
+            value="{{date}}"
+            bindchange="bindDateChange"
+          >
+            <view class="picker">选择日期：{{date}} </view>
+          </picker> -->
+          <input bindinput='inputImgUrl' adjust-position='true' placeholder='图片链接：'></input>
+          <input bindinput='inputTags' adjust-position='true' placeholder='标签(逗号或空格隔开)：'></input>
+          <textarea bindinput='inputIntro' adjust-position='true'  placeholder="文章简介：" />
+          <textarea bindinput='inputArticle' adjust-position='true' class='article'  placeholder="HTML内容：" />
+        </view>
+        <button bindtap='addBlog'>添加文章</button>
+      </view>
+    </van-tab>
+</van-tabs>
+</view>

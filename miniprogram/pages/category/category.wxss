@@ -1,0 +1,151 @@
+/* pages/category/category.wxss */
+.weui-search-bar {
+  position: relative;
+  padding: 16rpx 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: #999;
+}
+.weui-icon-search {
+  position: absolute;
+  top: 14rpx;
+  left: 50%;
+  margin-left: -58rpx;
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 20rpx;
+  top: 14rpx;
+}
+.weui-search-bar__text {
+  position: absolute;
+  left: 50%;
+  margin-left: -20rpx;
+  font-size: 32rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 28rpx;
+  background: #FFFFFF;
+  border: 1rpx solid #fff;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.weui-search-bar__input {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 32rpx;
+}
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 14rpx 16rpx;
+  font-size: 0;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 28rpx;
+  text-align: center;
+  color: #999;
+  background: #FFFFFF;
+  line-height: 56rpx;
+  height: 56rpx;
+}
+.weui-search-bar__cancel-btn {
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  line-height: 56rpx;
+  color: #7a81b1;
+  white-space: nowrap;
+}
+
+.topic{
+  background-color: #fff;
+  margin-top: 15rpx;
+  padding: 20rpx;
+}
+.topic_title{
+  color: #000;
+  font-weight: bold;
+  font-size: 36rpx;
+  line-height: 50rpx;
+}
+.topic_content{
+  margin-top: 10rpx;
+  color: #383845;
+  font-size: 30rpx;
+  line-height: 44rpx;
+}
+.topic_meta{
+  padding: 15rpx 0 0; 
+  display: flex;
+}
+.meta_item{
+  display: flex;
+  line-height: 30rpx;
+  height: 30rpx;
+  margin-right: 15rpx;
+}
+.meta_icon{
+  margin-right: 5rpx;
+}
+.meta_icon image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.meta_text{
+  font-size: 24rpx;
+  line-height: 30rpx;
+  color: #999;
+}
+.meta_item_date{
+  width: 150rpx;
+}
+.meta_item_view{
+  width: 88rpx;
+}
+.meta_item_comment{
+  width: 88rpx;
+}
+.meta_item_like{
+  width: 88rpx;
+}
+.meta_more{
+  margin-left: auto;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  color: #7a81b1;
+}
+.topic_tags{
+  display: flex;
+  margin: 15rpx 0 5rpx;
+}
+.tag_item{
+  font-size: 26rpx;
+  margin-right: 25rpx;
+  padding: 0 10rpx;
+  color: #fff;
+  border-radius: 5rpx;
+  background-color: #b4b8d3d3;
+}

@@ -1,0 +1,73 @@
+<!--pages/category/category.wxml-->
+<view class='page'>
+<!-- search start -->
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+              <icon type="clear" size="14"></icon>
+          </view>
+      </view>
+      <view class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">搜索</view>
+      </view>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+  </view>
+<!-- search end -->
+<!-- tabs start -->
+  <van-tabs active='{{active}}' bind:change="onChange">
+    <van-tab title="{{item}}" data-id='{{item}}' wx:for='{{yearCategory}}' wx:key=''>
+    <!-- topic start -->
+      <view class='topic' wx:for='{{blogList}}' wx:key='{{item.id}}'>
+        <view class='topic_title'>{{item.title}}</view>
+        <view class='topic_tags'>
+          <view class='tag_item' wx:for='{{item.tags}}' wx:key='' bindtap='tagSearch' data-id='{{item}}'>{{item}}</view>
+        </view>
+        <view class='topic_content'>{{item.intro}}</view>
+        <view class='topic_meta'>
+          <view class='meta_item meta_item_author'>
+            <view class='meta_icon'>
+              <image src='../../images/user.png'></image>
+            </view>
+            <view class='meta_text'>{{item.author}}</view>
+          </view>
+          <view class='meta_item meta_item_date'>
+            <view class='meta_icon meta_icon_author'>
+              <image src='../../images/time_circle.png'></image>
+            </view>
+            <view class='meta_text'>{{item.date}}</view>
+          </view>
+          <view class='meta_item meta_item_view'>
+            <view class='meta_icon'>
+              <image src='../../images/view.png'></image>
+            </view>
+            <view class='meta_text'>{{item.view}}</view>
+          </view>
+          <view class='meta_item meta_item_comment'>
+            <view class='meta_icon'>
+              <image src='../../images/comment.png'></image>
+            </view>
+            <view class='meta_text'>{{item.comment}}</view>
+          </view>
+          <view class='meta_item meta_item_like' bindtap='vote'>
+            <view class='meta_icon'>
+              <image src='../../images/heart.png'></image>
+            </view>
+            <view class='meta_text'>{{item.like}}</view>
+          </view>
+          <view class='meta_more' data-id='{{item.blogId}}' bindtap='navToDetail'>更多>></view>
+        </view>
+      </view>
+    <!-- topic end -->
+    </van-tab>
+  </van-tabs>
+  <view class='loading_box' wx:if='{{loadingStatus}}'>
+    <view class="loading_fade_circle"></view>
+  </view>
+<!-- tabs end -->
+</view>
+

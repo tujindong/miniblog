@@ -1,0 +1,77 @@
+<!--pages/blogDetail/blogDetail.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<!-- getUserInfoPopup start -->
+  <view class='overlay' hidden='{{detailFlag}}'></view>
+  <view class='popup_container' hidden='{{detailFlag}}'>
+    <view class='title'>
+      <view class='main_title'>点击授权</view>
+      <view class='sub_title'>凃小图将获取您的公开信息用户名和头像，欢迎吐槽评论点赞</view>
+   </view>
+   <view class='img'><image src='../../images/logo.png'></image></view>
+    <button open-type='getUserInfo' bindtap='hideDetail'>授权登录</button>
+  </view>
+  <view class='close' bindtap='hideDetail' hidden='{{detailFlag}}'>
+        <image src='../../images/close.png'></image>
+    </view>
+  <!-- getUserInfoPopup end -->
+<view class='page'>
+<!-- header start -->
+  <view class='topic'>
+    <view class='topic_title'>{{blogListDetail.title}}</view>
+    <view class='topic_meta'>
+      <view class='meta_item meta_item_date'>
+        <view class='meta_icon meta_icon_author'>
+          <image src='../../images/time_circle.png'></image>
+        </view>
+        <view class='meta_text'>{{date}}</view>
+      </view>
+      <view class='meta_item meta_item_like'>
+        <view class='meta_icon' bindtap='vote'>
+          <image src='../../images/heart.png'></image>
+        </view>
+        <view class='meta_text'>{{blogListDetail.like}}</view>
+      </view>
+    </view>
+    <view class='topic_tags'>
+      <view class='tag_item' wx:for='{{blogListDetail.tags}}' wx:key='' data-id='{{item}}' bindtap='tagSearch'>{{item}}</view>
+    </view>
+  </view>
+  <!-- header end -->
+  <!-- content start -->
+  <view class='content'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <!-- content end -->
+  <!-- commentList start -->
+  <view class='commentList_line'></view>
+  <view class='commentList_header'>共有{{commentNum}}条评论</view>
+  <view class='commentList' wx:for='{{commentListDetail}}' wx:key=''>
+    <view class='commentList_content'>
+      <image src='{{item.cAvatarUrl}}'></image>
+      <view class='commentList_content_name'>{{item.cNickName}}</view>
+      <view class='commentList_content_date'>{{item.date}}</view>
+    </view>
+    <view class='commentList_detail'>{{item.comment}}</view>
+    <!-- <view class='childComment' wx:for='{{item.childComment}}' wx:key=''>
+      <view class='childComment_content'>
+        <image src='{{item.cAvatarUrl}}'></image>
+        <view class='childComment_content_name'>{{item.cNickName}} 回复 {{}}</view>
+      </view>
+      <view class='childComment_detail'>{{item.comment}}</view>
+    </view> -->
+  </view>
+  <view class='commentList_bottom'>没有更多了...</view>
+  <!-- commentList end -->
+  <!-- comment start -->
+  <view class='comment'>
+    <view class='backHomePage' bindtap='backToHomepage'>
+      <image src='../../images/home_fill_light.png'></image>
+    </view>
+      <input class="comment-input" adjust-position="ture" type='text' placeholder-class='placeholder_style' confirm-type="send" cursor-spacing="10" maxlength="100" name="inputComment" value="{{commentValue}}" placeholder="请评论..." bindinput="commentInput" bindfocus='getUserId'
+      />
+      <view class='comment_btn' bindtap='commentConfirm'>
+        <image src='../../images/plane.png'></image>
+      </view>
+  </view>
+  <!-- comment end -->
+</view>
