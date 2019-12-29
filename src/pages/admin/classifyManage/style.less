@@ -1,0 +1,89 @@
+@import "../../../utils/theme.less";
+.page_classifyManage{
+    height: 100%;
+    .inner_wrap{
+        .list_container{
+            padding: 30px 10px;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    position: relative;
+                    width: 25%;
+                    height: 80px;
+                    text-align: center;
+                    &.list{
+                        .close{
+                            position: absolute;
+                            top: -9px;
+                            right: 0;
+                        }
+                        .img_wrap{
+                            img{ 
+                                display: inline-block;
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                        .name{
+                            font-size: @text_size_content;
+                            color: @text_color_normal;
+                        }
+                    }
+                    .add{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-top: -20px;
+                        margin-left: -20px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid @text_color_light;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 30px;
+                            margin-left: -15px;
+                            margin-top: -0.5px;
+                            border-top: 1px solid @text_color_light;
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            height: 30px;
+                            margin-top: -15px;
+                            margin-left: -0.5px;
+                            border-left: 1px solid @text_color_light;
+                        }
+                        &.hover_add{
+                            border: 1px solid @purple_main;
+                            &::before{
+                                border-top: 1px solid @purple_main;
+                            }
+                            &::after{
+                                border-left: 1px solid @purple_main;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .popup_container{
+            .inner_popup{
+                padding: 30px 10px;
+                .left_area{
+                }
+                .right_area{
+                }
+            }
+        }
+    }
+    .inner_loading{
+        padding: 15px 10px;
+    }
+}

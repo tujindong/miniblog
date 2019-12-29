@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "van-icon": "../../../static/vant-weapp/icon/index",
+        "van-tab": "../../../static/vant-weapp/tab/index",
+        "van-tabs": "../../../static/vant-weapp/tabs/index",
+        "van-toast": "../../../static/vant-weapp/toast/index",
+        "van-skeleton": "../../../static/vant-weapp/skeleton/index"
+    }
+}

@@ -1,0 +1,195 @@
+@import "../../../utils/theme.less";
+.page_commentManage{
+    height: 100%;
+    .inner_wrap{
+        height: 100%;
+        .tabs_container{
+            height: 100%;
+            .inner_tab{
+                min-height: 500px;
+                position: relative;
+                padding: 15px 0 20px;
+                .main_ul{
+                    .main_li{
+                        &:not(:last-child){
+                            border-bottom: 1px solid #f0f0f0;
+                        }
+                        .header{
+                            padding: 5px 10px;
+                            font-size: @text_size_content;
+                            color: @text_color_light;
+                        }
+                        .body{
+                            position: relative;
+                            display: flex;
+                            padding: 20px 0 60px;
+                            .tag{
+                                position: absolute;
+                                right: 5px;
+                                top: 5px;
+                                >div{
+                                img{
+                                    display: block;
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                                }
+                            }
+                            .avatar{
+                                margin-left: 10px;
+                                width: 40px;
+                                overflow: hidden;
+                                img{
+                                    display: block;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    background: @text_color_lighter;
+                                }
+                            }
+                            .info{
+                                width: 300px;
+                                margin-left: 10px;
+                                .title{
+                                    .name{
+                                        font-size: @text_size_subTitle;
+                                        color: @text_color_dark;
+                                        margin-bottom: 8px;
+                                    }
+                                }
+                                .comment{
+                                    font-size: @text_size_content;
+                                    color: @text_color_normal;
+                                }
+                                .action{
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 8px;
+                                    .time{
+                                        font-size: @text_size_attach;
+                                        color: @text_color_light;
+                                    }
+                                    .other{
+                                        margin-left: auto;
+                                        display: flex;
+                                        .icon{
+                                            margin-left: 25px;
+                                        }
+                                        .num{
+                                            margin-left: 5px;
+                                            font-size: @text_size_attach;
+                                            color: @purple_light;
+                                        }
+                                    }
+                                }  
+                            }
+                            .sub_comment{
+                                .sub_ul{
+                                    .sub_li{
+                                        display: flex;
+                                        padding: 20px 0 10px;
+                                        .info{
+                                            width: 250px;
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            .operate{
+                                display: flex;
+                                position: absolute;
+                                right: 10px;
+                                bottom: 15px;
+                                .btn{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 40px;
+                                    height: 22px;
+                                    margin-left: 20px;
+                                    font-size: @text_size_attach;
+                                    &.stroke{
+                                        border: 1px solid @purple_main;
+                                        color: @purple_main;
+                                    }
+                                    &.fill{
+                                        border: 1px solid @purple_main;
+                                        background: @purple_main;
+                                        color: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .noMore{
+                    height: 50px;
+                    width: 100%;
+                    font-size: @text_size_attach;
+                    color: @text_color_lighter;
+                    text-align: center;
+                    line-height: 50px;
+                }
+            }
+            .inner_loading{
+                padding: 35px 0px; 
+            }
+        }
+        .popup_container{
+            .inner_popup{
+                position: absolute;
+                background: #ffffff;
+                top: 50%;
+                left: 50%;
+                margin-top: -130px;
+                margin-left: -150px;
+                width: 300px;
+                height: 150px;
+                border-radius: 5px;
+                .close{
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                }
+                .header{
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: @text_color_dark;
+                    font-size: @text_size_subTitle;
+                    border-bottom: 1px solid #f0f0f0;
+                }
+                .body{
+                    height: 50px;
+                    overflow: hidden;
+                }
+                .footer{
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    .btn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 50px;
+                        height: 30px;
+                        font-size: @text_size_attach;
+                        border-radius: 2px;
+                        &.stroke{
+                            margin-left: auto;
+                            margin-right: 20px;
+                            border: 1px solid @purple_main;
+                            color: @purple_main;
+                        }
+                        &.fill{
+                            margin-right: 10px;
+                            border: 1px solid @purple_main;
+                            background: @purple_main;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

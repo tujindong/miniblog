@@ -1,16 +1,32 @@
 {
-	"miniprogramRoot": "miniprogram/",
-	"cloudfunctionRoot": "cloudfunctions/",
+	"description": "项目配置文件。",
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
+	"miniprogramRoot": "dist/wx/",
+	"compileType": "miniprogram",
 	"appid": "wx688d2296e069717a",
-	"projectname": "%E5%87%83%E5%B0%8F%E5%9B%BE%E7%9A%84%E5%8D%9A%E5%AE%A2",
-	"libVersion": "2.2.5",
+	"projectname": "miniBlog",
+	"simulatorType": "wechat",
+	"cloudfunctionRoot": "static/functions/",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"libVersion": "2.9.4",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -25,58 +41,119 @@
 			"list": []
 		},
 		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
-					"name": "index",
-					"pathName": "pages/index/index",
-					"query": ""
+					"name": "pages/postsDetail/main",
+					"pathName": "pages/postsDetail/main",
+					"query": "id=b3b086ef5de0ca2400667b7108e6e837",
+					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "category",
-					"pathName": "pages/category/category",
-					"query": ""
+					"name": "pages/postsDetail/main",
+					"pathName": "pages/postsDetail/main",
+					"query": "id=699679fa5de0ca2500650da6715291eb",
+					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "mine",
-					"pathName": "pages/mine/mine",
-					"query": ""
-				},
-				{
-					"id": 3,
-					"name": "blogDetail",
-					"pathName": "pages/blogDetail/blogDetail",
-					"query": ""
+					"name": "pages/mine/main",
+					"pathName": "pages/mine/main",
+					"query": "",
+					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "search",
-					"pathName": "pages/search/search",
-					"query": ""
-				},
-				{
-					"id": 5,
-					"name": "blog_exm",
-					"pathName": "pages/blogDetail/blogDetail",
-					"query": "blogId=W_ZyLkXacNtiP6pH"
+					"name": "pages/version/main",
+					"pathName": "pages/version/main",
+					"query": "",
+					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "addBlog",
-					"pathName": "pages/addBlog/addBlog",
-					"query": ""
+					"name": "pages/admin/index/main",
+					"pathName": "pages/admin/index/main",
+					"query": "",
+					"scene": null
 				},
 				{
-					"id": 7,
-					"name": "cube",
-					"pathName": "pages/cube/cube",
-					"query": ""
+					"id": -1,
+					"name": "pages/contactMe/main",
+					"pathName": "pages/contactMe/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/admin/postsManage/main",
+					"pathName": "pages/admin/postsManage/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/admin/commentManage/main",
+					"pathName": "pages/admin/commentManage/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/admin/classifyManage/main",
+					"pathName": "pages/admin/classifyManage/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/admin/versionManage/main",
+					"pathName": "pages/admin/versionManage/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/admin/versionManage/main",
+					"pathName": "pages/admin/versionManage/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/admin/userManage/main",
+					"pathName": "pages/admin/userManage/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/participation/main",
+					"pathName": "pages/participation/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/admin/postsEditManage/main",
+					"pathName": "pages/admin/postsEditManage/main",
+					"query": "postId=b3b086ef5de0ca2400667b7108e6e837",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/postsDetail/main",
+					"pathName": "pages/postsDetail/main",
+					"scene": null
 				}
 			]
 		}

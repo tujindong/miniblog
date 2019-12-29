@@ -1,0 +1,139 @@
+@import "../../../utils/theme.less";
+.page_versionManage{
+    height: 100%;
+    .inner_wrap{
+        height: 100%;
+        padding: 10px 0 60px;
+        .list_container{
+            ul{
+                li{
+                    padding: 15px 15px;
+                    &:not(:last-child){
+                        border-bottom: 1px solid #f0f0f0;
+                    }
+                    &.hover_li{
+                        position: relative;
+                        &::after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            height: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(255, 255, 255, 0.1)
+                        }
+                    }
+                    .header{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 5px;
+                        .title{
+                            font-size: @text_size_subTitle;
+                            color: @text_color_dark;
+                        }
+                        .time{
+                            font-size: @text_size_content;
+                            color: @text_color_light;
+                        }
+                    }
+                    .body{
+                        font-size: @text_size_content;
+                        color: @text_color_normal;
+                    }
+                }
+            }
+        }
+        .btn_container{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: #ffffff;
+            .btn{
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 98%;
+                height: 45px;
+                background: @purple_main;
+                color: #ffffff;
+                font-size: @purple_main;
+                &.hover_btn{
+                    background: @purple_sub;
+                }
+            }
+        }
+        .addModal_container{
+            .inner_popup{
+                position: absolute;
+                background: #ffffff;
+                top: 50%;
+                left: 50%;
+                margin-top: -120px;
+                margin-left: -150px;
+                width: 300px;
+                height: 250px;
+                border-radius: 5px;
+                .close{
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                }
+                .header{
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: @text_color_dark;
+                    font-size: @text_size_subTitle;
+                    border-bottom: 1px solid #f0f0f0;
+                }
+                .body{
+                    height: 150px;
+                    overflow: hidden;
+                    .date_choose{
+                        height: 30px;
+                        padding: 10px 15px;
+                        color: #999999;
+                        font-size: 14px;
+                        border-bottom: 1px solid #f5f5f5;
+                        &.active{
+                            color: #666666;
+                        }
+                    }
+                }
+                .footer{
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    .btn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 50px;
+                        height: 30px;
+                        font-size: @text_size_attach;
+                        border-radius: 2px;
+                        &.stroke{
+                            margin-left: auto;
+                            margin-right: 20px;
+                            border: 1px solid @purple_main;
+                            color: @purple_main;
+                        }
+                        &.fill{
+                            margin-right: 10px;
+                            border: 1px solid @purple_main;
+                            background: @purple_main;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .inner_loading{
+        padding: 15px 10px;
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "van-icon": "../../../static/vant-weapp/icon/index",
+        "van-picker": "../../../static/vant-weapp/picker/index",
+        "van-popup": "../../../static/vant-weapp/popup/index",
+        "van-switch": "../../../static/vant-weapp/switch/index",
+        "van-dialog": "../../../static/vant-weapp/dialog/index",
+        "van-skeleton": "../../../static/vant-weapp/skeleton/index",
+        "van-toast": "../../../static/vant-weapp/toast/index"
+    }
+}

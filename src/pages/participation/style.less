@@ -1,0 +1,50 @@
+@import "../../utils/theme.less";
+.page_participation{
+    .tabs_container{
+        .inner_tab{
+            padding: 20px 0;
+            min-height: 500px;
+            ul{
+                li{
+                    position: relative;
+                    &.hover_li{
+                        &.hover_li{
+                            &::after{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                display: block;
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                background: rgba(255, 255, 255, 0.25);
+                            }
+                        }
+                    }
+                    .header{
+                        padding: 10px 10px;
+                        font-size: @text_size_subTitle;
+                        color: @text_color_dark;
+                        font-weight: bold;
+                    }
+                    .body{
+                        padding: 0px 10px 10px;
+                        font-size: @text_size_content;
+                        color: @text_color_normal;
+                    }
+                }
+                .noMore{
+                    height: 50px;
+                    width: 100%;
+                    font-size: @text_size_attach;
+                    color: @text_color_lighter;
+                    text-align: center;
+                    line-height: 50px;
+                }
+            }
+        }
+        .inner_loading{
+            padding: 20px 0;
+        }
+    }
+}

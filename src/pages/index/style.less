@@ -1,0 +1,30 @@
+@import "../../utils/theme.less";
+.page_index{
+    padding-top: 70px;
+    .sec-nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
+    .inner_main{
+        height: 100%;
+        .tabs_container{
+            height: 100%;
+            .inner_tab{
+                position: relative;
+                min-height: 500px;
+                .list_container{
+                    .noMore{
+                        height: 50px;
+                        width: 100%;
+                        font-size: @text_size_attach;
+                        color: @text_color_lighter;
+                        text-align: center;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    } 
+}

@@ -1,0 +1,17 @@
+{
+  "name": "syncService",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "~1.5.5",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "date-utils": "^1.2.21"
+  }
+}

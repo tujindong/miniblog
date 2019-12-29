@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/postsDetail/main",
+    "pages/mine/main",
+    "pages/version/main",
+    "pages/contactMe/main",
+    "pages/admin/index/main",
+    "pages/admin/classifyManage/main",
+    "pages/admin/userManage/main",
+    "pages/admin/postsManage/main",
+    "pages/admin/commentManage/main",
+    "pages/admin/versionManage/main",
+    "pages/admin/postsEditManage/main",
+    "pages/participation/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "涂小图",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,89 @@
+@import "../../../utils/theme.less";
+.page_userManage{
+    height: 100%;
+    .inner_wrap{
+        ul{
+            li{
+                padding: 15px 10px;
+                display: flex;
+                height: 60px;
+                .avatar{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        background: @text_color_lighter;
+                    }
+                }
+                .info{
+                    width: 220px;
+                    height: 100%;
+                    margin-left: 20px;
+                    .name{
+                        height: 50%;
+                        display: flex;
+                        align-items: center;
+                        .user_name{
+                            font-size: @text_size_content;
+                            color: @text_color_dark;
+                        }
+                        .user_gender{
+                            margin-left: 8px;
+                            img{
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                    .location{
+                        height: 50%;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            font-size: @text_size_attach;
+                            color: @text_color_normal;
+                            &:nth-child(2n){
+                                margin: 0 8px;
+                                color: #f0f0f0;
+                            }
+                        }
+                    }
+                }
+                .action{
+                    display: flex;
+                    width: 90px;
+                    height: 100%;
+                    justify-content: center;
+                    .icon{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        font-size: @text_size_content;
+                        &.green{
+                            color: @green;
+                        }
+                        &.red{
+                            color: @red;
+                        }
+                    }
+                }
+            }
+        }
+        .noMore{
+            height: 50px;
+            width: 100%;
+            font-size: @text_size_attach;
+            color: @text_color_lighter;
+            text-align: center;
+            line-height: 50px;
+        }
+        .inner_loading{
+            padding: 15px 0;
+        }
+    }
+}

@@ -1,26 +1,37 @@
-# 小程序版个人博客
+# mini_blog
 
-运用小程序云开发数据库，文件存储，云函数。
+> 小程序博客
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+## Build Setup
 
-## 参考文档
+``` bash
+# 初始化项目
+vue init mpvue/mpvue-quickstart myproject
+cd myproject
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+# 安装依赖
+yarn
 
-## 实现功能
+# 开发时构建
+npm dev
 
-- 首页瀑布流列表展示
-- 文章年份归档分类
-- 博客详情页面
-- 用户评论
-- 简单后台文章删除增加
+# 打包构建
+npm build
 
+# 指定平台的开发时构建(微信、百度、头条、支付宝)
+npm dev:wx
+npm dev:swan
+npm dev:tt
+npm dev:my
 
-![Image text](https://github.com/tujindong/miniblog/blob/master/miniprogram/images/index.jpg)
+# 指定平台的打包构建
+npm build:wx
+npm build:swan
+npm build:tt
+npm build:my
 
-手机扫码或者搜索“凃小图的博客”体验一下。
+# 生成 bundle 分析报告
+npm run build --report
+```
 
-![Image text](https://github.com/tujindong/miniblog/blob/master/miniprogram/images/logo.jpg)
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

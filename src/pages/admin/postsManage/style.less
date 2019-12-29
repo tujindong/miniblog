@@ -1,0 +1,90 @@
+@import "../../../utils/theme.less";
+.page_postsManage{
+    height: 100%;
+    .inner_wrap{
+        padding: 15px 0px 0px;
+        .post_container{
+            ul{
+                li{
+                    .header{
+                        display: flex;
+                        padding: 10px 10px 5px;
+                        justify-content: space-between;
+                        .title{
+                            width: 260px;
+                            font-size: @text_size_subTitle;
+                            color: @text_color_dark;
+                            font-weight: bold;
+                        }
+                        .status{
+                            font-size: @text_size_content;
+                            &.green{
+                                color: @green;
+                            }
+                            &.yellow{
+                                color: @yellow;
+                            }
+                        }
+                    }
+                    .body{
+                        padding: 5px 10px 10px; 
+                        .content{
+                            font-size: @text_size_content;
+                            color: @text_color_normal;
+                        }
+                        .action{
+                            margin-top: 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            .classify{
+                                font-size: @text_size_attach;
+                                color: @text_color_light;
+                            }
+                            .btn{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 40px;
+                                height: 22px;
+                                margin-left: 20px;
+                                font-size: @text_size_attach;
+                                border: 1px solid @purple_main;
+                                background: @purple_main;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            } 
+            .noMore{
+                height: 50px;
+                width: 100%;
+                font-size: @text_size_attach;
+                color: @text_color_lighter;
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+        .inner_loading{
+            padding-top: 10px;
+        }
+        .async_posts{
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 40px;
+            left: 30px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: @purple_main;
+            &.hover_async_posts{
+                background: @purple_sub;
+            }
+            .icon{
+                margin-top: 7px;
+            }
+        }
+    }
+}

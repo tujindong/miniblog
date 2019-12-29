@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "van-overlay": "../../../static/vant-weapp/overlay/index",
+        "van-transition": "../../../static/vant-weapp/transition/index",
+        "van-toast": "../../../static/vant-weapp/toast/index"
+    }
+}
