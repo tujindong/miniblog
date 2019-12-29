@@ -1,8 +1,0 @@
-{
-  "enablePullDownRefresh": true,
-  "backgroundTextStyle": "dark",
-  "usingComponents": {
-    "van-tab": "../../vant/tab/index",
-    "van-tabs": "../../vant/tabs/index"
-  }
-}
