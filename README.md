@@ -13,13 +13,12 @@
 ```
 
 ## 扫码体验
-![小程序码](./static/images/qrcode.jpg)
+![小程序码](./static/example/qrcode.jpg)
 
 ## 内容示例
-![列表详情](./static/images/page_home.jpg)
-![我的、后台管理](./static/images/page_polygon.jpg)
-![文章管理](./static/images/page_triangle.jpg)
-![分类管理](./static/images/page_trans.jpg)
+![列表详情](./static/example/list.jpeg)
+![文章管理](./static/example/edit.jpeg)
+![分类管理](./static/example/classify.jpg)
 
 
 ## 目录结构
