@@ -18,7 +18,7 @@
 ## 内容示例
 ![列表详情](./static/example/list.jpeg)
 ![文章管理](./static/example/edit.jpeg)
-![分类管理](./static/example/classify.jpg)
+![分类管理](./static/example/classify.jpeg)
 
 
 ## 目录结构
