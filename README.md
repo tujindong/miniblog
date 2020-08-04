@@ -15,12 +15,12 @@
 ```
 
 ## 扫码体验
-![小程序码](./static/example/qrcode.jpg)
+![小程序码](https://github.com/tujindong/miniblog/tree/master/static/example/qrcode.jpg)
 
 ## 内容示例
-![列表详情](./static/example/list.jpeg)
-![文章管理](./static/example/edit.jpeg)
-![分类管理](./static/example/classify.jpeg)
+![列表详情](https://github.com/tujindong/miniblog/tree/master/static/example/list.jpeg)
+![文章管理](https://github.com/tujindong/miniblog/tree/master/static/example/edit.jpeg)
+![分类管理](https://github.com/tujindong/miniblog/tree/master/static/example/classify.jpeg)
 
 
 ## 目录结构
